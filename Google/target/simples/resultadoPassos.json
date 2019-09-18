@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12542330600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Pesquisa.Iniciar()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Com sucesso",
+        "description": "",
+        "id": "pesquisa-no-google;com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 885350600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Pesquisa.Finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1488656900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "que acesso o Google",
+            "match": {
+              "location": "Pesquisa.que_acesso_o_Google()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2691327800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "digito \"Chocolate\" e aperto Enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chocolate",
+                  "offset": 8
+                }
+              ],
+              "location": "Pesquisa.digito_e_aperto_Enter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86995200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "exibe uma pagina com links e o titulo \"Chocolate - Pesquisa Google\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chocolate - Pesquisa Google",
+                  "offset": 39
+                }
+              ],
+              "location": "Pesquisa.exibe_uma_pagina_com_links_e_o_titulo(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Pesquisa no Google",
+    "description": "",
+    "id": "pesquisa-no-google",
+    "keyword": "Feature",
+    "uri": "Pesquisa.feature"
+  }
+]
